@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acortador de Enlaces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Acortador de Enlaces Cloud</h1>
+        <p>Ingresa una URL larga para generar un enlace corto.</p>
+        
+        <form id="shortenForm">
+            <input type="url" id="originalUrl" placeholder="https://ejemplo.com/ruta/larga" required>
+            <button type="submit" id="submitBtn">Acortar URL</button>
+        </form>
+        
+        <div id="errorMsg" class="hidden error"></div>
+        
+        <div id="resultBox" class="hidden success-box">
+            <p><strong>¡URL Acortada con éxito!</strong></p>
+            <div class="link-container">
+                <a id="shortUrl" href="#" target="_blank"></a>
+                <button id="copyBtn">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
